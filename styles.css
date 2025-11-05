@@ -1,0 +1,148 @@
+html {
+  scroll-padding-top: 80px; /* same as header height */
+  scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "XTypewriter-Regular";
+    src: url(file:///C:/%D0%92%D0%B0%D0%B6%D0%BD%D1%8B%D0%B5%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%B5%D0%BD%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B8/%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D0%BD%D1%8B%D0%B5%20%D0%B2%D0%B5%D1%89%D0%B8/TestWebsite/XTypewriter-Regular.otf) format("truetype");
+}
+@font-face {
+    font-family: "JetBrainsMonoNL-SemiBoldItalic";
+    src: url(file:///C:/Users/vlryz/AppData/Local/Microsoft/Windows/Fonts/JetBrainsMonoNL-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: "JetBrainsMono-ExtraBoldItalic";
+    src: url(file:///C:/Users/vlryz/AppData/Local/Microsoft/Windows/Fonts/JetBrainsMono-ExtraBoldItalic.ttf);
+}
+body{
+    background-color: #f9f5e9;
+    font-family: "XTypewriter-Regular";
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -8px;
+    z-index: 999;
+}
+.topnavright a{
+    float: left;
+}
+.topnavleft a{
+    float: right;
+}
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.FirstChapter{
+    margin-top: 80px;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+p{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: justify;
+    text-indent: 5%;
+}
+.table-container {
+  display: flex;
+  justify-content: center; /* Centers the table horizontally */
+}
+table {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-collapse: collapse;
+    width: auto; /* Adjust as needed, or remove for content-based width */
+}
+th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left; /* Adjust text alignment within cells as desired */
+    font-family: "JetBrainsMono-ExtraBoldItalic";
+}
+summary{
+    margin-left: 20%;
+    font-size: 25px;
+}
+/*
+.leftimage1{
+    position: absolute;
+    top: 650px;
+    left: 8px;
+    width: 225px;
+    height: 400px;
+    z-index: 1;
+}
+.rightimage1{
+    position: absolute;
+    top: 650px;
+    right: 8px;
+    width: 225px;
+    height: 400px;
+    z-index: 1;
+}
+bad idea, retired*/
+.table-text_with_image{
+    display: grid;
+}
+td{
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left; /* Adjust text alignment within cells as desired */
+    font-size: 22px;
+}
+th{
+    font-size: 25px;
+    text-align: center;
+}
+.starticon{
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+.USSR_progression{
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    width: 90%;
+    height: 300px;
+    z-index: 1;
+}
+.SecondChapter{
+    margin-top: 380px;
+}
+h1{
+    background: linear-gradient(to right, darkred, red, red, green, green); /* Define your gradient colors and direction */
+    background-clip: content-box;
+    -moz-background-clip: text;
+    -webkit-background-clip: text; /* Clip the background to the shape of the text */
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 80px;
+}
+details{
+    font-family: "JetBrainsMonoNL-SemiBoldItalic";
+}
