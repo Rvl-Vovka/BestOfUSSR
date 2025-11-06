@@ -1,10 +1,10 @@
 html {
-  scroll-padding-top: 80px; /* same as header height */
+  scroll-padding-top: 5vw; /* same as header height */
   scroll-behavior: smooth;
 }
 @font-face {
     font-family: "XTypewriter-Regular";
-    src: url(XTypewriter-Regular.otf) format("truetype");
+    src: url(XTypewriter-Regular.otf);
 }
 @font-face {
     font-family: "JetBrainsMonoNL-SemiBoldItalic";
@@ -36,9 +36,9 @@ body{
 .topnav a {
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.875vw 1vw;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3vw;
 }
 .topnav a:hover {
     background-color: #ddd;
@@ -49,39 +49,39 @@ body{
     color: white;
 }
 .FirstChapter{
-    margin-top: 80px;
+    margin-top: 5vw;
 }
 h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5vw;
 }
 p{
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 25px;
-    line-height: 35px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-size: 1.5625vw;
+    line-height: 2.1875vw;
     text-align: justify;
-    text-indent: 5%;
+    text-indent: 6vw;
 }
 .table-container {
   display: flex;
   justify-content: center; /* Centers the table horizontally */
 }
 table {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 6vw;
+    margin-right: 6vw;
     border-collapse: collapse;
     width: auto; /* Adjust as needed, or remove for content-based width */
 }
 th {
-    border: 1px solid #ccc;
-    padding: 8px;
+    border: 0.0625vw solid #ccc;
+    padding: 0.5vw;
     text-align: left; /* Adjust text alignment within cells as desired */
     font-family: "JetBrainsMono-ExtraBoldItalic";
 }
 summary{
-    margin-left: 20%;
-    font-size: 25px;
+    margin-left: 6vw;
+    font-size: 1.5625vw;
 }
 /*
 .leftimage1{
@@ -105,33 +105,33 @@ bad idea, retired*/
     display: grid;
 }
 td{
-    border: 1px solid #ccc;
-    padding: 8px;
+    border: 0.0625vw solid #ccc;
+    padding: 0.5vw;
     text-align: left; /* Adjust text alignment within cells as desired */
-    font-size: 22px;
+    font-size: 1.375vw;
 }
 th{
-    font-size: 25px;
+    font-size: 1.5625vw;
     text-align: center;
 }
 .starticon{
     position: absolute;
-    top: 80px;
+    top: 5vw;
     left: 5%;
-    width: 100px;
-    height: 100px;
+    width: 6.25vw;
+    height: 6.25vw;
     z-index: 1;
 }
 .USSR_progression{
     position: absolute;
-    top: 200px;
+    top: 12.5vw;
     left: 5%;
     width: 90%;
-    height: 300px;
+    height: 19vw;
     z-index: 1;
 }
 .SecondChapter{
-    margin-top: 380px;
+    margin-top: 24vw;
 }
 h1{
     background: linear-gradient(to right, darkred, red, red, green, green); /* Define your gradient colors and direction */
@@ -140,10 +140,9 @@ h1{
     -webkit-background-clip: text; /* Clip the background to the shape of the text */
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 80px;
-    margin-top: 80px;
+    font-size: 5vw;
+    margin-top: 5vw;
 }
 details{
     font-family: "JetBrainsMonoNL-SemiBoldItalic";
 }
-
