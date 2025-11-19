@@ -60,8 +60,8 @@ h1{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: 5vw;
-    margin-top: 5vw;
+    font-size: 3vw;
+    margin-top: 6vw;
 }
 h2{
     text-align: center;
@@ -605,3 +605,4 @@ td{
         font-size: 1.5vh;
     }
 }
+
