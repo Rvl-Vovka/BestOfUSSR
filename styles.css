@@ -12,8 +12,8 @@
 }
 
 html {
-  scroll-padding-top: 5vw;
-  scroll-behavior: smooth;
+    scroll-padding-top: 5vw;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #f9f5e9;
@@ -117,6 +117,16 @@ td{
     padding: 0.5vw;
     text-align: center;
     font-size: 1.375vw;
+}
+
+h4{
+    border-top:solid 0.5vh #2ba8c2;
+    margin-left: -8px;
+    width: calc(100% + 16px);
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 2vw;
+    height: 1vw;
 }
 
 .starticon{
@@ -605,4 +615,3 @@ td{
         font-size: 1.5vh;
     }
 }
-
