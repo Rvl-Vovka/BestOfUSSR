@@ -76,3 +76,44 @@ document.addEventListener('scroll', function() {
         element.classList.add('active');
     }
 });
+
+function equalizeRowHeights() {
+    // 1. Get all tables on the website
+    const tables = document.querySelectorAll('table');
+
+    tables.forEach(table => {
+        // 2. Iterate through all rows in the current table
+        const rows = table.rows;
+        for (let i = 0; i < rows.length; i++) {
+            const row = rows[i];
+            // Get all cells (td and th) in the current row
+            const cells = row.querySelectorAll('td, th');
+
+            // Find the maximum height among the cells in the row
+            let maxHeight = 0;
+            // Temporarily clear any set heights to get the natural height
+            cells.forEach(cell => {
+                cell.style.height = 'auto';
+            });
+            
+            cells.forEach(cell => {
+                // Use offsetHeight which accounts for padding, borders, etc.
+                const cellHeight = cell.offsetHeight;
+                if (cellHeight > maxHeight) {
+                    maxHeight = cellHeight;
+                }
+            });
+
+            // 3. Set all cells in the row to the maximum height found
+            cells.forEach(cell => {
+                cell.style.height = `${maxHeight}px`;
+            });
+        }
+    });
+}
+
+// Run the function after the window loads to ensure all elements are rendered
+window.onload = equalizeRowHeights;
+
+// Optional: Run the function again if the window is resized, as heights might change
+window.onresize = equalizeRowHeights;
